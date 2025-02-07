@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage[
+  pdfpagelabels=true,
+  pdftitle={Real-Time Systems Development with RTEMS and Multicore Processors},
+  pdfauthor={Gedare Bloom, Joel Sherrill, Tingting Hu, Ivan Cibrario Bertolotti},
+]{hyperref}
+\usepackage{bookmark}
+\usepackage{comment}
+
+\begin{comment}
+  Code borrowed from
+  https://michaelgoerz.net/notes/pdf-bookmarks-with-latex.html
+
+  Found by
+  https://unix.stackexchange.com/questions/3378/modifying-pdf-files/12531#12531
+\end{comment}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\includepdf[pages=1-]{RTSysWithRTEMSAndMP.pdf}
+
+\bookmark[page=5,level=0]{Contents}
+\bookmark[page=12,level=0]{Preface}
+\bookmark[page=13,level=0]{The Authors}
+\bookmark[page=15,level=0]{Ch 1: Introduction}
+\bookmark[page=17,level=0]{Part I: Operating System Basics}
+\bookmark[page=18,level=1]{Ch 2: Cross-Compilation Toolchain}
+\bookmark[page=50,level=1]{Ch 3: Concurrent Programming and Scheduling Algorithms}
+\bookmark[page=72,level=1]{Ch 4: Scheduling Analysis and Interrupt Handling}
+\bookmark[page=102,level=0]{Part II: Task Management and Timekeeping}
+\bookmark[page=103,level=1]{Ch 5: Task Management and Timekeeping, Classic API}
+\bookmark[page=160,level=1]{Ch 6: Task Management and Timekeeping, POSIX API}
+\bookmark[page=212,level=0]{Part III: Inter-Task Synchronization and Communication}
+\bookmark[page=213,level=1]{Ch 7: Inter-Task Synchronization and Communication (IPC) Based on Shared Memory}
+\bookmark[page=292,level=1]{Ch 8: IPC, Task Execution, and Scheduling}
+\bookmark[page=325,level=1]{Ch 9: IPC Based on Message Passing}
+\bookmark[page=355,level=0]{Part IV: Network Communication}
+\bookmark[page=356,level=1]{Ch 10: Network Communication in RTEMS}
+\bookmark[page=371,level=1]{Ch 11: POSIX Sockets and API}
+\bookmark[page=413,level=0]{Part V: Multicores in Real-Time Embedded Systems}
+\bookmark[page=414,level=1]{Ch 12: Multicores in Embedded Systems}
+\bookmark[page=474,level=1]{Ch 13: Multicore Concurrency: Issues and Solutions}
+\bookmark[page=529,level=0]{Index}
+\bookmark[page=561,level=0]{References}
+
+\end{document}

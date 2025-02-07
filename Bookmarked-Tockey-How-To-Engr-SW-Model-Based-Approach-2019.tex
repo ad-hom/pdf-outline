@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage[
+  pdfpagelabels=true,
+  pdftitle={How to Engineer Software: A Model-Based Approach},
+  pdfauthor={Steve Tockey},
+]{hyperref}
+\usepackage{bookmark}
+\usepackage{comment}
+
+\begin{comment}
+  Code borrowed from
+  https://michaelgoerz.net/notes/pdf-bookmarks-with-latex.html
+
+  Found by
+  https://unix.stackexchange.com/questions/3378/modifying-pdf-files/12531#12531
+\end{comment}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\includepdf[pages=1-]{Tockey-How-To-Engr-SW-Model-Based-Approach-2019-No-Outline.pdf}
+
+\bookmark[page=6,level=0]{Contents}
+\bookmark[page=9,level=0]{Foreword}
+\bookmark[page=14,level=0]{Preface}
+\bookmark[page=21,level=0]{Acknowledgments}
+\bookmark[page=23,level=0]{Online Resources}
+
+\bookmark[page=24,level=0]{Part I Introduction and Foundations}
+\bookmark[page=25,level=1]{1 Introduction}
+\bookmark[page=61,level=1]{2 The Nature of Code}
+\bookmark[page=88,level=1]{3 Fundamental Principles}
+\bookmark[page=112,level=1]{4 Functional and Nonfunctional Requirements}
+\bookmark[page=136,level=1]{5 UML Overview}
+\bookmark[page=145,level=1]{6 Partitioning Systems into Domains}
+
+\bookmark[page=170,level=0]{Part II Semantic Modeling: Model-Based Functional Requirements}
+\bookmark[page=171,level=1]{7 Use Case Diagrams: Scope and Context}
+\bookmark[page=200,level=1]{8 Class Models: Policies to Enforce}
+\bookmark[page=253,level=1]{9 Interaction Diagrams: Process at a Mid-Level}
+\bookmark[page=277,level=1]{10 State Models: Process at a Fine-Grained Level}
+\bookmark[page=321,level=1]{11 Partitioning Domains into Subdomains}
+\bookmark[page=338,level=1]{12 Wrapping Up Semantic Modeling}
+
+\bookmark[page=383,level=0]{Part III Model-Based Design and Code}
+\bookmark[page=385,level=1]{13 Introduction to Design and Code}
+\bookmark[page=392,level=1]{14 Designing Interfaces: Specifying Real-World Interaction}
+\bookmark[page=420,level=1]{15 High-Level Design: Classes and Operations}
+\bookmark[page=459,level=1]{16 High-Level Design: Contracts and Signatures}
+\bookmark[page=514,level=1]{17 Detailed Design and Code}
+\bookmark[page=550,level=1]{18 Formal Disciplines of Design and Code}
+\bookmark[page=593,level=1]{19 Optimization}
+\bookmark[page=643,level=1]{20 Model Compilation}
+\bookmark[page=684,level=1]{21 Advanced Open Model Compilation}
+\bookmark[page=713,level=1]{22 Wrapping Up Model-Based Design and Code}
+
+\bookmark[page=731,level=0]{Part IV Related Topics}
+\bookmark[page=732,level=1]{23 Estimation}
+\bookmark[page=765,level=1]{24 Development and Maintenance Processes}
+\bookmark[page=793,level=1]{25 Economics of Error Handling}
+\bookmark[page=821,level=1]{26 Arguments Against Model-Based Software Engineering}
+
+\bookmark[page=833,level=0]{Part V Summary}
+\bookmark[page=834,level=1]{27 Closing Remarks}
+
+\bookmark[page=848,level=0]{Part VI Appendices}
+\bookmark[page=850,level=1]{Appendix A: Documentation Principles}
+\bookmark[page=853,level=1]{Appendix B: WebBooks 2.0 Background}
+\bookmark[page=856,level=1]{Appendix C: WebBooks 2.0 Domains}
+\bookmark[page=860,level=1]{Appendix D: Semantic Model for Order fulfillment}
+\bookmark[page=887,level=1]{Appendix E: (Pro Forma) Order fulfillment Design}
+\bookmark[page=907,level=1]{Appendix F: Semantic Model for Payment}
+\bookmark[page=928,level=1]{Appendix G: (Pro Forma) Payment Design}
+\bookmark[page=943,level=1]{Appendix H: Semantic Model for Scalability}
+\bookmark[page=968,level=1]{Appendix I: (Pro Forma) Scalability Design}
+\bookmark[page=983,level=1]{Appendix J: Semantic Model for High availability}
+\bookmark[page=999,level=1]{Appendix K: (Pro Forma) High availability Design}
+\bookmark[page=1009,level=1]{Appendix L: Semantics of Semantic Modeling}
+\bookmark[page=1046,level=1]{Appendix M: Sample Production Rules}
+\bookmark[page=1058,level=1]{Appendix N: Software Structural Complexity Metrics}
+
+\bookmark[page=1077,level=0]{References}
+\bookmark[page=1086,level=0]{Index}
+
+\end{document}
