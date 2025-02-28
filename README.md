@@ -1,5 +1,5 @@
 # pdf-outline
-Example files for applying bookmarks to an existing PDF
+Example files for applying bookmarks to an existing PDF with pdflatex
 
 ## Instructions
 To apply the bookmarks, after you've mapped section titles to the desired pages and nesting levels:
